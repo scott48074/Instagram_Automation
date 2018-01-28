@@ -17,7 +17,7 @@
 <li><a href="https://stedolan.github.io/jq/">jq</a> Likely in you favorite repository</li>
 </ul>
 <h3><a id="How_It_Works_17"></a>How It Works</h3>
-<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/
+<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Documents/
 $ git <span class="hljs-built_in">clone</span> https://github.com/scott48074/Instagram_Automation.git
 $ <span class="hljs-built_in">cd</span> Instagram_Automation
 </code></pre>
@@ -29,7 +29,7 @@ $ <span class="hljs-built_in">cd</span> Instagram_Automation
 <li>Add Add the URL pointing to a CSV containing the hash tags that you want to like.</li>
 <li>Add Add the URL pointing to a CSV containing the hash tags that you want to ignore.</li>
 </ul>
-<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/Instagram_Automation
+<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Documents/Instagram_Automation
 $ bash install_instapy.sh
 $ bash update_and_move.sh
 $ bash start_automation.sh
