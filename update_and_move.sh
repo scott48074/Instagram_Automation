@@ -1,6 +1,6 @@
 #!/bin/bash
 #=========================================#
-# Script:	 	 update_and_move.sh       #
+# Script:	 update_and_move.sh       #
 # Author:        Scott Frasier            #
 # Date Created:  28/01/2017               #
 # Last Modified: 28/01/2017               #
