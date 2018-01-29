@@ -41,7 +41,7 @@ $ bash start_automation.sh
 <li>Get the shareable <strong>public</strong> link</li>
 <li>Open an incognito window</li>
 <li>Visit the CSV file</li>
-<li>Download the file as a CSV File &gt; Download as &gt; csv</li>
+<li>Download the file as a CSV File &gt; Download as &gt; CSV</li>
 <li>In Chrome got to your downloads tab</li>
 <li>Righ click on the file and click copy link</li>
 <li>This link can be used in the config.json</li>
