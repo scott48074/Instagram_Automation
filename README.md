@@ -3,7 +3,7 @@
 <h1><a id="What_it_Does_3"></a>What it Does</h1>
 <p>Automates a Chrome browser to:</p>
 <ul>
-<li>Like Instagram photos containing specified hash tags.</li>
+<li>Likes Instagram photos containing specified hash tags.</li>
 <li>Ignore Instagram photos containing specified hash tags.</li>
 <li>Ignores specified followers. This is done so that interactions with followers remains genuine.</li>
 </ul>
