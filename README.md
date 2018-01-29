@@ -52,7 +52,7 @@ $ bash start_automation.sh
 <li>Clones the InstaPy repository</li>
 <li>Downloads the Chrome Driver places it appropriate directory.</li>
 <li>Starts a virtualenv and install InstaPy’s requirements into it.</li>
-<li>Edits a file to fix an issue with the way InstaPy handles a browse with English as the default language.</li>
+<li>Edits a file to fix an issue with the way InstaPy handles a browser with English as the default language.</li>
 </ul>
 <p><strong>update_and_move.sh</strong></p>
 <ul>
