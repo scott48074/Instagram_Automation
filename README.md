@@ -24,10 +24,10 @@ $ <span class="hljs-built_in">cd</span> Instagram_Automation
 <p>Next edit the config.json file:</p>
 <ul>
 <li>Add your Instagram user_name.</li>
-<li>Add your Instagram password .</li>
+<li>Add your Instagram password.</li>
 <li>Add the URL pointing to a CSV containing your followers user names. One name on each line.</li>
-<li>Add the URL pointing to a CSV containing the hash tags that you want to like.</li>
-<li>Add the URL pointing to a CSV containing the hash tags that you want to ignore.</li>
+<li>Add the URL pointing to a CSV containing the hash tags that you want to like. One name on each line.</li>
+<li>Add the URL pointing to a CSV containing the hash tags that you want to ignore. One name on each line.</li>
 </ul>
 <pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Documents/Instagram_Automation
 $ bash install_instapy.sh
