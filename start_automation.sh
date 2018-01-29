@@ -1,6 +1,6 @@
 #!/bin/bash
 #=========================================#
-# Script:	 	 start_automation.sh      #
+# Script:	 start_automation.sh      #
 # Author:        Scott Frasier            #
 # Date Created:  28/01/2017               #
 # Last Modified: 28/01/2017               #
