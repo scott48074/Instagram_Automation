@@ -1,11 +1,11 @@
 #!/bin/bash
 #=========================================#
-# Script:	 	 install_instapy.sh       #
+# Script:	 install_instapy.sh       #
 # Author:        Scott Frasier            #
 # Date Created:  28/01/2017               #
 # Last Modified: 28/01/2017               #
 # Purpose:                                #
-#  1) Install InstaPy 					  #
+#  1) Install InstaPy 		          #
 #  2) Download the Chrome Driver          #
 #  3) Install InstaPy requirements into a #
 #     virtualenv                          #
