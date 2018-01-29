@@ -34,7 +34,7 @@ $ bash install_instapy.sh
 $ bash update_and_move.sh
 $ bash start_automation.sh
 </code></pre>
-<p>With any luck Chrome will start the automation will start.</p>
+<p>With any luck Chrome will start the automation.</p>
 <h3><a id="Using_Google_Drive_to_Host_the_CSV_files_38"></a>Using Google Drive to Host the CSV files</h3>
 <ul>
 <li>Make the three CSV files (followers.csv, tags.csv, unwanted_tags)</li>
