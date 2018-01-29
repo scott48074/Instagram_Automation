@@ -1,6 +1,6 @@
 <h1><a id="Instagram_Automation_0"></a>Instagram_Automation</h1>
 <p>Automates the installation and use of <a href="https://github.com/timgrossmann/InstaPy">InstaPy</a>.</p>
-<h1><a id="What_it_Does_3"></a>What it Does</h1>
+<h3><a id="What_it_Does_3"></a>What it Does</h3>
 <p>Automates a Chrome browser to:</p>
 <ul>
 <li>Likes Instagram photos containing specified hash tags.</li>
