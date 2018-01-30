@@ -1,9 +1,9 @@
 <h1><a id="Instagram_Automation_0"></a>Instagram_Automation</h1>
 <p>Automates the installation and use of <a href="https://github.com/timgrossmann/InstaPy">InstaPy</a>.</p>
-<h3><a id="What_it_Does_3"></a>What it Does</h3>
+<h1><a id="What_it_Does_3"></a>What it Does</h1>
 <p>Automates a Chrome browser to:</p>
 <ul>
-<li>Likes Instagram photos containing specified hash tags.</li>
+<li>Like Instagram photos containing specified hash tags.</li>
 <li>Ignore Instagram photos containing specified hash tags.</li>
 <li>Ignores specified followers. This is done so that interactions with followers remains genuine.</li>
 </ul>
@@ -17,42 +17,58 @@
 <li><a href="https://stedolan.github.io/jq/">jq</a> Likely in you favorite repository</li>
 </ul>
 <h3><a id="How_It_Works_17"></a>How It Works</h3>
-<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Documents/
+<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/
 $ git <span class="hljs-built_in">clone</span> https://github.com/scott48074/Instagram_Automation.git
 $ <span class="hljs-built_in">cd</span> Instagram_Automation
 </code></pre>
 <p>Next edit the config.json file:</p>
 <ul>
 <li>Add your Instagram user_name.</li>
-<li>Add your Instagram password.</li>
+<li>Add your Instagram password .</li>
 <li>Add the URL pointing to a CSV containing your followers user names. One name on each line.</li>
-<li>Add the URL pointing to a CSV containing the hash tags that you want to like. One name on each line.</li>
-<li>Add the URL pointing to a CSV containing the hash tags that you want to ignore. One name on each line.</li>
+<li>Add Add the URL pointing to a CSV containing the hash tags that you want to like.</li>
+<li>Add Add the URL pointing to a CSV containing the hash tags that you want to ignore.</li>
 </ul>
-<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Documents/Instagram_Automation
+<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/Instagram_Automation
 $ bash install_instapy.sh
 $ bash update_and_move.sh
 $ bash start_automation.sh
 </code></pre>
-<p>With any luck Chrome will start the automation.</p>
-<h3><a id="Using_Google_Drive_to_Host_the_CSV_files_38"></a>Using Google Drive to Host the CSV files</h3>
+<p>With any luck Chrome will start the automation will start.</p>
+<h3><a id="bashrc_38"></a>.bashrc</h3>
+<p>I made things even quicker by adding a alias to my .bashrc.</p>
+<pre><code class="language-sh"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">ig</span></span> () {
+    <span class="hljs-keyword">if</span> [ <span class="hljs-variable">$1</span> = <span class="hljs-string">"-u"</span> ]; <span class="hljs-keyword">then</span>
+        bash ~/Documents/Instagram_Automation/install_instapy.sh
+    <span class="hljs-keyword">fi</span>
+    bash ~/Documents/Instagram_Automation/update_and_move.sh
+    bash ~/Documents/Instagram_Automation/start_automation.sh
+} 
+</code></pre>
+<p>Then when you want to run.</p>
+<pre><code class="language-sh">$ ig
+</code></pre>
+<p>If you want to update InstaPy before running.</p>
+<pre><code class="language-sh">$ ig -u
+</code></pre>
+<h3><a id="Using_Google_Drive_to_Host_the_CSV_files_58"></a>Using Google Drive to Host the CSV files</h3>
 <ul>
 <li>Make the three CSV files (followers.csv, tags.csv, unwanted_tags)</li>
 <li>Get the shareable <strong>public</strong> link</li>
 <li>Open an incognito window</li>
 <li>Visit the CSV file</li>
-<li>Download the file as a CSV: File &gt; Download as &gt; CSV</li>
+<li>Download the file as a CSV File &gt; Down as &gt; csv</li>
 <li>In Chrome got to your downloads tab</li>
 <li>Righ click on the file and click copy link</li>
 <li>This link can be used in the config.json</li>
 </ul>
-<h3><a id="Individual_Script_Description_48"></a>Individual Script Description</h3>
+<h3><a id="Individual_Script_Description_68"></a>Individual Script Description</h3>
 <p><strong>install_instapy.sh</strong></p>
 <ul>
 <li>Clones the InstaPy repository</li>
-<li>Downloads the Chrome Driver places it appropriate directory</li>
-<li>Starts a virtualenv and install InstaPy’s requirements into it</li>
-<li>Edits a file to fix an issue with the way InstaPy handles a browser with English as the default language</li>
+<li>Downloads the Chrome Driver places it appropriate directory.</li>
+<li>Starts a virtualenv and install InstaPy’s requirements into it.</li>
+<li>Edits a file to fix an issue with the way InstaPy handles a browse with English as the default language.</li>
 </ul>
 <p><strong>update_and_move.sh</strong></p>
 <ul>
@@ -70,6 +86,6 @@ $ bash start_automation.sh
 <ul>
 <li>The actual automation</li>
 </ul>
-<h3><a id="License_67"></a>License</h3>
+<h3><a id="License_87"></a>License</h3>
 <p><a href="https://github.com/scott48074/Instagram_Automation/blob/master/LICENSE">License</a><br>
 <a href="https://github.com/timgrossmann/InstaPy/blob/master/LICENSE">InstaPy License</a></p>
