@@ -34,7 +34,7 @@ $ bash install_instapy.sh
 $ bash update_and_move.sh
 $ bash start_automation.sh
 </code></pre>
-<p>With any luck Chrome will start the automation will start.</p>
+<p>With any luck Chrome automation will start.</p>
 <h3><a id="bashrc_38"></a>.bashrc</h3>
 <p>I made things even quicker by adding an alias to my .bashrc.</p>
 <pre><code class="language-sh"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">ig</span></span> () {
