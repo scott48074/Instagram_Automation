@@ -59,7 +59,7 @@ $ bash start_automation.sh
 <li>Visit the CSV file</li>
 <li>Download the file as a CSV File &gt; Down as &gt; csv</li>
 <li>In Chrome go to your downloads tab</li>
-<li>Righ click on the file and click copy link</li>
+<li>Right click on the file and click copy link</li>
 <li>This link can be used in the config.json</li>
 </ul>
 <h3><a id="Individual_Script_Description_68"></a>Individual Script Description</h3>
