@@ -14,7 +14,7 @@
 <li>pip</li>
 <li>virtualenv</li>
 <li>Chrome Browser</li>
-<li><a href="https://stedolan.github.io/jq/">jq</a> Likely in you favorite repository</li>
+<li><a href="https://stedolan.github.io/jq/">jq</a> Likely in your favorite repository</li>
 </ul>
 <h3><a id="How_It_Works_17"></a>How It Works</h3>
 <pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/
@@ -68,7 +68,7 @@ $ bash start_automation.sh
 <li>Clones the InstaPy repository</li>
 <li>Downloads the Chrome Driver places it appropriate directory.</li>
 <li>Starts a virtualenv and install InstaPy’s requirements into it.</li>
-<li>Edits a file to fix an issue with the way InstaPy handles a browse with English as the default language.</li>
+<li>Edits a file to fix an issue with the way InstaPy handles a browser with English as the default language.</li>
 </ul>
 <p><strong>update_and_move.sh</strong></p>
 <ul>
