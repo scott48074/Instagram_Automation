@@ -58,7 +58,7 @@ $ bash start_automation.sh
 <li>Open an incognito window</li>
 <li>Visit the CSV file</li>
 <li>Download the file as a CSV File &gt; Down as &gt; csv</li>
-<li>In Chrome got to your downloads tab</li>
+<li>In Chrome go to your downloads tab</li>
 <li>Righ click on the file and click copy link</li>
 <li>This link can be used in the config.json</li>
 </ul>
