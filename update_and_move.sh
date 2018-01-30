@@ -25,9 +25,8 @@ copy_files () {
 }
 
 
-get_csv_files followers.csv $(cat config.json | jq .followers | tr '"' " ")
-get_csv_files tags.csv $(cat config.json | jq .tags | tr '"' " ")
-get_csv_files unwanted_tags.csv $(cat config.json | jq .unwanted_tags | tr '"' " ")
+get_csv_files ~/Documents/Instagram_Automation/followers.csv $(cat ~/Documents/Instagram_Automation/config.json | jq .followers | tr '"' " ")
+get_csv_files ~/Documents/Instagram_Automation/tags.csv $(cat ~/Documents/Instagram_Automation/config.json | jq .tags | tr '"' " ")
+get_csv_files ~/Documents/Instagram_Automation/unwanted_tags.csv $(cat ~/Documents/Instagram_Automation/config.json | jq .unwanted_tags | tr '"' " ")
 copy_files
-
 
