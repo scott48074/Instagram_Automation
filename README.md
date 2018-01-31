@@ -6,7 +6,7 @@
 <li>Like Instagram photos containing specified hash tags</li>
 <li>Ignore Instagram photos containing specified hash tags</li>
 <li>Ignores specified followers to keep follower interaction genuine</li>
-</ul>f
+</ul>
 <h3><a id="Requirements_9"></a>Requirements:</h3>
 <ul>
 <li>Linux Box (Tested using Arch)</li>
