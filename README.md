@@ -39,7 +39,7 @@ $ bash start_automation.sh
 <h3><a id="bashrc_38"></a>.bashrc</h3>
 <p>I made things even quicker by adding an alias to my .bashrc.</p>
 <pre><code class="language-sh"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">ig</span></span> () {
-    <span class="hljs-keyword">if</span> [[ <span class="hljs-variable">$1</span> = <span class="hljs-string">"-u"</span> ]]; <span class="hljs-keyword">then</span>
+    <span class="hljs-keyword">if</span> [[ <span class="hljs-variable">$1</span> == <span class="hljs-string">"-u"</span> ]]; <span class="hljs-keyword">then</span>
         bash ~/Documents/Instagram_Automation/install_instapy.sh
     <span class="hljs-keyword">fi</span>
     bash ~/Documents/Instagram_Automation/update_and_move.sh
