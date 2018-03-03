@@ -30,7 +30,7 @@ $ <span class="hljs-built_in">cd</span> Instagram_Automation
 <li>Add Add the URL pointing to a CSV containing the hash tags that you want to ignore</li>
 <li>The CSV files should contain one username or tag per line in the first column</li>  
 </ul>
-<pre><code class="language-sh">$ <span class="hljs-built_in">
+<pre><code class="language-sh">$ bash install_instapy.sh<span class="hljs-built_in">
 $ bash install_instapy.sh
 $ bash update_and_move.sh
 $ bash start_automation.sh
