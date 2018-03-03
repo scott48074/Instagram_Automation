@@ -75,5 +75,5 @@ delete_old
 get_new
 make_virtual_env
 download_chrome_driver
-remove_language_check # Remove if Chrome's default language is not English. 
+# remove_language_check # No longer needed  
 run_instapy_setup
