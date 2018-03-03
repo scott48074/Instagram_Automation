@@ -20,7 +20,7 @@
 <pre>$ git <span class="hljs-built_in">clone</span> https://github.com/scott48074/Instagram_Automation.git<code class="language-sh">
 $ <span class="hljs-built_in">cd</span> Instagram_Automation
 </code></pre>
-<p>Next rename the config.change_me to config.json and add the following:</p>
+<p>Next rename the config.change_this to config.json and add the following:</p>
 <ul>
 <li>Add your Instagram user_name</li>
 <li>Add your Instagram password </li>
