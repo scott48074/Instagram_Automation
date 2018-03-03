@@ -17,8 +17,7 @@
 <li><a href="https://stedolan.github.io/jq/">jq</a> Likely in your favorite repository</li>
 </ul>
 <h3><a id="How_It_Works_17"></a>How It Works</h3>
-<pre><code class="language-sh"><span class="hljs-built_in">
-$ git <span class="hljs-built_in">clone</span> https://github.com/scott48074/Instagram_Automation.git
+<pre>$ git <span class="hljs-built_in">clone</span> https://github.com/scott48074/Instagram_Automation.git<code class="language-sh">
 $ <span class="hljs-built_in">cd</span> Instagram_Automation
 </code></pre>
 <p>Next rename the config.change_me to config.json and add the following:</p>
