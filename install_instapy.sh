@@ -49,7 +49,7 @@ download_chrome_driver() {
 	wget https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
 	unzip chromedriver_linux64.zip
 	mv chromedriver $1/instapy_automation/InstaPy/assets/
-	rm -r $1/my_tmp
+	rm -r $1/tmp
 }
 
 
