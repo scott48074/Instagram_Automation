@@ -17,11 +17,11 @@
 <li><a href="https://stedolan.github.io/jq/">jq</a> Likely in your favorite repository</li>
 </ul>
 <h3><a id="How_It_Works_17"></a>How It Works</h3>
-<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/
+<pre><code class="language-sh"><span class="hljs-built_in">
 $ git <span class="hljs-built_in">clone</span> https://github.com/scott48074/Instagram_Automation.git
 $ <span class="hljs-built_in">cd</span> Instagram_Automation
 </code></pre>
-<p>Next edit the config.json file:</p>
+<p>Next rename the config.change_me to config.json and add the following:</p>
 <ul>
 <li>Add your Instagram user_name</li>
 <li>Add your Instagram password </li>
@@ -30,7 +30,7 @@ $ <span class="hljs-built_in">cd</span> Instagram_Automation
 <li>Add Add the URL pointing to a CSV containing the hash tags that you want to ignore</li>
 <li>The CSV files should contain one username or tag per line in the first column</li>  
 </ul>
-<pre><code class="language-sh">$ <span class="hljs-built_in">cd</span> ~/Desktop/Instagram_Automation
+<pre><code class="language-sh">$ <span class="hljs-built_in">
 $ bash install_instapy.sh
 $ bash update_and_move.sh
 $ bash start_automation.sh
@@ -40,10 +40,10 @@ $ bash start_automation.sh
 <p>I made things even quicker by adding an alias to my .bashrc.</p>
 <pre><code class="language-sh"><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">ig</span></span> () {
     <span class="hljs-keyword">if</span> [[ <span class="hljs-variable">$1</span> == <span class="hljs-string">"-u"</span> ]]; <span class="hljs-keyword">then</span>
-        bash ~/Documents/Instagram_Automation/install_instapy.sh
+        bash [YOUR CHOSEN PATH]/install_instapy.sh
     <span class="hljs-keyword">fi</span>
-    bash ~/Documents/Instagram_Automation/update_and_move.sh
-    bash ~/Documents/Instagram_Automation/start_automation.sh
+    bash [YOUR CHOSEN PATH]/update_and_move.sh
+    bash [YOUR CHOSEN PATH]/start_automation.sh
 } 
 </code></pre>
 <p>Then when you want to run:</p>
