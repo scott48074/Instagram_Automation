@@ -21,12 +21,16 @@ get_csv_files () {
 
 copy_files () {
 	# Copy the relevant files to the InstaPy directory.
-	cp ~/Documents/Instagram_Automation/{config.json,followers.csv,your_automation.py,tags.csv,unwanted_tags.csv} ~/Documents/instapy_automation/InstaPy/
+	cp $1/{config.json,followers.csv,your_automation.py,tags.csv,unwanted_tags.csv} $1/instapy_automation/InstaPy/
 }
 
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+get_csv_files $SCRIPTPATH/followers.csv $(cat $SCRIPTPATH/config.json | jq .followers | tr '"' " ")
+get_csv_files $SCRIPTPATH/tags.csv $(cat $SCRIPTPATH/config.json | jq .tags | tr '"' " ")
+get_csv_files $SCRIPTPATH/unwanted_tags.csv $(cat $SCRIPTPATH/config.json | jq .unwanted_tags | tr '"' " ")
 
-get_csv_files ~/Documents/Instagram_Automation/followers.csv $(cat ~/Documents/Instagram_Automation/config.json | jq .followers | tr '"' " ")
-get_csv_files ~/Documents/Instagram_Automation/tags.csv $(cat ~/Documents/Instagram_Automation/config.json | jq .tags | tr '"' " ")
-get_csv_files ~/Documents/Instagram_Automation/unwanted_tags.csv $(cat ~/Documents/Instagram_Automation/config.json | jq .unwanted_tags | tr '"' " ")
-copy_files
+echo "followers.csv has $( wc -l $SCRIPTPATH/followers.csv | awk '{print $1}') lines"
+echo "tags.csv has $(wc -l $SCRIPTPATH/tags.csv | awk '{print $1}') lines" 
+echo "unwanted_tags.csv has $(wc -l $SCRIPTPATH/unwanted_tags.csv | awk '{print $1}') lines" 
+copy_files $SCRIPTPATH
 

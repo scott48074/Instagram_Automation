@@ -11,13 +11,14 @@
 
 
 start_automation () {
+	
 	# Start the virtualenv
-	cd ~/Documents/instapy_automation/
+	cd $1/instapy_automation
 	source venv/bin/activate
 	# Start the automation script 
 	cd InstaPy
 	time python your_automation.py
 }
 
-
-start_automation
+SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+start_automation $SCRIPTPATH
