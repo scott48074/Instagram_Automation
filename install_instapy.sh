@@ -1,11 +1,11 @@
 #!/bin/bash
 #=========================================#
-# Script:	 install_instapy.sh           #
+# Script:	 install_instapy.sh       #
 # Author:        Scott Frasier            #
 # Date Created:  28/01/2017               #
 # Last Modified: 28/01/2017               #
 # Purpose:                                #
-#  1) Install InstaPy 		              #
+#  1) Install InstaPy 		          #
 #  2) Download the Chrome Driver          #
 #  3) Install InstaPy requirements into a #
 #     virtualenv                          #
@@ -46,7 +46,7 @@ download_chrome_driver() {
 	echo "Downloading Chrome Driver" >&2
 	mkdir $1/tmp
 	cd $1/tmp
-	wget https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
+	wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
 	unzip chromedriver_linux64.zip
 	mv chromedriver $1/instapy_automation/InstaPy/assets/
 	rm -r $1/tmp
